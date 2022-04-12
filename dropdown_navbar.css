@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(44, 41, 41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav #icon h1 {
+    color: greenyellow;
+    font-size: 35px;
+    margin-left: 20px;
+    transition: all .4s;
+}
+
+nav #icon h1:hover {
+    transform: rotate(90deg);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul ul {
+    left: 200px;
+    top: 0px;
+}
+
+nav ul ul {
+    width: 200px;
+    position: absolute;
+    background-color: rgb(44, 41, 41);
+    display: none;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all .4s;
+}
+
+nav ul li a:hover {
+    background-color: #d9d9d9;
+    color: #000;
+}
+
+nav ul li form input {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .09);
+}
+
+nav ul li form input:focus {
+    border: 2px solid rgb(23, 184, 23);
+}
+
+#sign {
+    display: inline;
+    padding: 3px 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: 2px solid rgb(23, 184, 23);
+    border-radius: 5px;
+    background-color: rgb(44, 41, 41);
+    color: rgb(34, 233, 34);
+}
+
+#sign:hover {
+    color: white;
+    background-color: rgb(23, 184, 23);
+}
+
+#right-arrow {
+    font-size: 22px;
+    margin-left: 90px;
+}
+
+@media only screen and (max-width: 1020px) {
+    nav ul li form input {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 804px) {
+    nav ul li a {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+}

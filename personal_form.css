@@ -1,0 +1,111 @@
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 80%;
+    padding: 30px;
+}
+
+form fieldset {
+    padding: 30px;
+    border-color: rgb(23, 167, 23);
+    border-radius: 5px;
+}
+
+form input {
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(131, 209, 14);
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+form input:hover {
+    background-color: rgb(250, 249, 249);
+}
+
+textarea {
+    width: 100%;
+    border-width: 1px;
+    border-color: rgb(131, 209, 14);
+}
+
+form input[type="radio"] {
+    width: auto;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+}
+
+form p {
+    color: green;
+}
+
+form legend {
+    font-size: 20px; 
+    font-weight: 1000; 
+    color: rgb(12, 116, 12); 
+    letter-spacing: 4px;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+select {
+    margin-left: 10px;
+}
+
+select option {
+    background-color: gainsboro;
+}
+
+select option:hover {
+    background-color: whitesmoke;
+}
+
+form button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid green;
+    color: green;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+button[type="submit"] {
+    background-color: rgb(20, 189, 20);
+    color: #fff;
+    border-color: rgb(20, 189, 20);
+    transition: all .2s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(.98);
+    background-color: rgb(6, 156, 6);
+    border-color: rgb(6, 156, 6);
+}
+
+button[type="reset"] {
+    color: orange;
+    border-color: orange;
+    float: right;
+    transition: all .4s;
+}
+
+button[type="reset"]:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+@media  screen and (max-width: 371px) {
+    form legend {
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+}
